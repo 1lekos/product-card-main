@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 80px 0;
+  font-family: Montserrat, Roboto, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  background-color: #ffffff;
+}
+
+.title {
+  margin: 0 0 80px;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  width: 340px;
+  padding: 25px;
+
+  background-color: #f7f7fa;
+  box-shadow: 2px 2px 10px #5150761a;
+}
+
+.card-image {
+  display: block;
+  width: 290px;
+  margin-bottom: 20px;
+}
+
+.card-tag {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: #a5a3b9;
+  text-transform: uppercase;
+}
+
+.card-title {
+  margin: 0 0 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.card-text {
+  margin: 0 0 15px;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card-subtitle {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ingredients {
+  margin: 0;
+  padding-left: 25px;
+
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.price span {
+  font-weight: 400;
+}
