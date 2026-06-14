@@ -5,11 +5,16 @@
 body {
   margin: 0;
   padding: 80px 0;
-  font-family: Montserrat, Roboto, Geneva, Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #515076;
+
   background-color: #ffffff;
+  background-image: url("./Images/bg-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }
 
 .title {
@@ -32,6 +37,9 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+
   width: 340px;
   padding: 25px;
 
@@ -87,8 +95,11 @@ body {
 .price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  margin-top: 30px;
+
+  margin-top: auto;
+  padding-top: 30px;
 
   font-size: 20px;
   font-weight: 700;
