@@ -26,8 +26,8 @@ body {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   justify-content: center;
   gap: 45px;
 
@@ -45,6 +45,13 @@ body {
 
   background-color: #f7f7fa;
   box-shadow: 2px 2px 10px #5150761a;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 2px 8px 20px #51507633;
 }
 
 .card-image {
@@ -97,7 +104,6 @@ body {
   justify-content: space-between;
   align-items: center;
 
-
   margin-top: auto;
   padding-top: 30px;
 
@@ -108,4 +114,50 @@ body {
 
 .price span {
   font-weight: 400;
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: max-content;
+  height: 31.62px;
+  margin: 10px auto 0;
+  padding: 6px 12px;
+
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+
+  background-color: #ffffff;
+  border: 1px solid #d8d7e5;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-button:hover {
+  color: #ffffff;
+  background-color: #515076;
+}
+
+.card-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #5150764d;
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 340px);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 340px);
+  }
 }
