@@ -9,12 +9,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <main>
     <section class="products">
       <h1 class="products__title">Выбери свой продукт</h1>
+      
+      <div class="products__controls controls">
+        <button class="button controls__button" id="repaint-first-button" type="button">
+          Перекрасить первую карточку
+        </button>
+
+        <button class="button controls__button" id="repaint-all-button" type="button">
+          Перекрасить все карточки
+        </button>
+
+        <button class="button controls__button" id="google-button" type="button">
+          Открыть Google
+        </button>
+
+        <button class="button controls__button" id="console-button" type="button">
+          Вывести в консоль
+        </button>
+
+        <button class="button controls__button" id="alert-button" type="button">
+          Показать alert
+        </button>
+
+        <button class="button controls__button" id="color-toggle-button" type="button">
+          Сменить цвет кнопки
+        </button>
+      </div>
 
       <ul class="products__list">
         <li class="product-card">
